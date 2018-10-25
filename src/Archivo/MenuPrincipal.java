@@ -3,7 +3,6 @@
  *  Fecha de Inicio: 24 de Octubre de 2018.
  *  Última modificación: 24/10/2018.
  */
-
 package Archivo;
 
 import java.io.File;
@@ -18,6 +17,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     public MenuPrincipal() {
         initComponents();
         this.setVisible(true);
+        tfRuta.setEditable(false);
     }
 
     /**
@@ -58,6 +58,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
 
+        tfRuta.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -71,7 +73,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 .addComponent(jButtonCargar, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43))
             .addGroup(layout.createSequentialGroup()
-                .addGap(203, 203, 203)
+                .addGap(194, 194, 194)
                 .addComponent(jButtonSalir)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -83,12 +85,12 @@ public class MenuPrincipal extends javax.swing.JFrame {
                     .addComponent(tfRuta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonCargar, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(54, 54, 54)
+                .addGap(25, 25, 25)
                 .addComponent(jButtonSalir)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(529, 218));
+        setSize(new java.awt.Dimension(529, 176));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
